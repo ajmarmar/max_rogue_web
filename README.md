@@ -1,4 +1,4 @@
-# Nini Rogue Web
+# Max Rogue Web
 [![](https://github.com/ajmarmar/mini-rogue-web/workflows/Build/badge.svg)](https://github.com/ajmarmar/mini-rogue-web/actions?query=workflow%3ABuild) [![](https://github.com/ajmarmar/mini-rogue-web/workflows/Tests/badge.svg)](https://github.com/ajmarmar/mini-rogue-web/actions?query=workflow%3ATests) 
 
 

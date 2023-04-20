@@ -7,6 +7,10 @@ $primary: #026fbd;
 
 // Add global app styles here
 body {
+  background-image: url('./assets/images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;	
   margin-bottom: 10px;
   margin-top: 15px;
 }
