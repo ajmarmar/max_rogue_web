@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular2-full-stack": {
+    "max-rogue": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular2-full-stack:build:production"
+              "browserTarget": "max-rogue:build:production"
             },
             "development": {
-              "browserTarget": "angular2-full-stack:build:development",
+              "browserTarget": "max-rogue:build:development",
               "proxyConfig": "proxy.conf.json"
             }
           },
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular2-full-stack:build"
+            "browserTarget": "max-rogue:build"
           }
         },
         "test": {

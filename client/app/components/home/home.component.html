@@ -1,0 +1,15 @@
+<div class="container">
+    <img src="../assets/images/max_rogue_logo.png" class="img-fluid mx-auto d-block" width="50%">
+    <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+        <button type="button" class="btn btn-success m-2" (click)="startGame()">
+            <i class="fa fa-play-circle-o" aria-hidden="true"></i> Nueva Partida
+        </button>
+        <button type="button" class="btn btn-success m-2" (click)="loadGame()">
+            <i class="fa fa-upload" aria-hidden="true"></i> Cargar Partida
+        </button>
+        <button type="button" class="btn btn-success m-2" (click)="configGame()">
+            <i class="fa fa-cogs" aria-hidden="true"></i> Configuración
+        </button>
+    </div>
+    <router-outlet></router-outlet>
+</div>

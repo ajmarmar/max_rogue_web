@@ -1,6 +1,6 @@
 {
-  "name": "angular2-full-stack",
-  "version": "15.2.2",
+  "name": "max-rogue",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "Davide Violante",
   "description": "Angular Full Stack project built using Angular 2+, Express, Mongoose and Node.",
@@ -33,6 +33,7 @@
     "@angular/platform-browser-dynamic": "^15.2.2",
     "@angular/router": "^15.2.2",
     "@auth0/angular-jwt": "^5.1.0",
+    "@ng-select/ng-select": "^10.0.4",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
@@ -41,6 +42,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.2",
     "morgan": "^1.10.0",
+    "ngx-bootstrap": "^10.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

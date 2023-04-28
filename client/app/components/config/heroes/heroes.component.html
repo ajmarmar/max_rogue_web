@@ -1,0 +1,159 @@
+<div class="container mt-3" *ngIf="!showFormHero">
+  <div class="row">
+    <div class="col text-end">
+      <button type="button" class="btn btn-primary btn-sm m-2 " (click)="nuevoHeroe()">
+        <i class="fa fa-plus" aria-hidden="true"></i> Nuevo Heroe
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Foto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Atributos</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container mt-3" *ngIf="showFormHero">
+  <div class="row">
+    <div class="col text-end">
+      <button type="button" class="btn btn-primary btn-sm m-2 " (click)="backListHeroes()">
+        <i class="fa fa-list" aria-hidden="true"></i> Volver al listado
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <img src="../../../../assets/images/meeple.jpg" class="img-thumbnail" alt="...">
+    </div>
+    <div class="col-9">
+      <form class="row">
+        <div class="row  g-2">
+          <div class="col-8">
+            <label for="inputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="inputName">
+          </div>
+          <div class="col-4">
+            <label for="inputClass" class="form-label">Class</label>
+            <select class="form-select" aria-label="Default select example" id="inputClass">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row justify-content-between g-2">
+          <div class="col-2">
+            <label for="inputShield" class="form-label"><i class="fa fa-shield" aria-hidden="true"></i> Shield</label>
+            <input type="number" maxlength="2" min="0" max="10" class="form-control" id="inputShield">
+          </div>
+          <div class="col-2">
+            <label for="inputHeart" class="form-label"><i class="fa fa-heart" aria-hidden="true"></i> Heart</label>
+            <input type="number" maxlength="2" min="0" max="10" class="form-control" id="inputHeart">
+          </div>
+          <div class="col-2">
+            <label for="inputGold" class="form-label"><i class="fa fa-money" aria-hidden="true"></i> Gold</label>
+            <input type="number" maxlength="2" min="0" max="10" class="form-control" id="inputGold">
+          </div>
+          <div class="col-2">
+            <label for="inputFood" class="form-label"><i class="fa fa-cutlery" aria-hidden="true"></i> Food</label>
+            <input type="number" maxlength="2" min="0" max="10" class="form-control" id="inputFood">
+          </div>
+          <div class="col-2">
+            <label for="inputFeat" class="form-label"><i class="fa fa-bolt" aria-hidden="true"></i> Feat</label>
+            <input type="number" maxlength="2" min="0" max="10" class="form-control" id="inputFeat">
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-12">
+            <label for="inputPotions" class="form-label me-5">
+              <i class="fa fa-flask" aria-hidden="true"></i> Posions:
+            </label>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">
+                <i class="fa fa-fire" aria-hidden="true"></i> Fuego
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">
+                <i class="fa fa-snowflake-o" aria-hidden="true"></i> Hielo
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">
+                <i class="fa fa-tint" aria-hidden="true"></i> Veneno
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i> Curación
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">
+                <i class="fa fa-glass" aria-hidden="true"></i> Sagrada
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">
+                <i class="fa fa-eye" aria-hidden="true"></i> Percepción
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <tabset id="exTab1">
+          <tab heading="Skill #1">
+            <app-skill></app-skill>
+          </tab>
+          <tab heading="Skill #2">
+            <app-skill></app-skill>
+          </tab>
+        </tabset>
+
+        <div class="row g-2">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
