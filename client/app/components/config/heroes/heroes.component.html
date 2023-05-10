@@ -1,7 +1,7 @@
 <div class="container mt-3" *ngIf="!showFormHero">
   <div class="row">
     <div class="col text-end">
-      <button type="button" class="btn btn-primary btn-sm m-2 " (click)="nuevoHeroe()">
+      <button type="button" class="btn btn-primary btn-sm m-2 " (click)="addHero()">
         <i class="fa fa-plus" aria-hidden="true"></i> Nuevo Heroe
       </button>
     </div>
@@ -50,7 +50,18 @@
   </div>
   <div class="row">
     <div class="col-3">
-      <img src="../../../../assets/images/meeple.jpg" class="img-thumbnail" alt="...">
+        <ngx-file-drop 
+          dropZoneLabel="Drop files here"
+          [multiple]="false" 
+          dropZoneClassName="dzclassname"
+          contentClassName="contentclassname"
+          (onFileDrop)="dropped($event)" 
+          (onFileOver)="fileOver($event)" 
+          (onFileLeave)="fileLeave($event)">
+            <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+              <img src="{{imageFake}}" class="img-thumbnail ppp" alt="..." (click)="openFileSelector()">              
+            </ng-template>
+        </ngx-file-drop>
     </div>
     <div class="col-9">
       <form class="row">

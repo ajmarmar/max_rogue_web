@@ -4,6 +4,7 @@ import { JwtModule } from '@auth0/angular-jwt';
 
 //External Componentents
 import { NgSelectModule } from '@ng-select/ng-select';
+import { NgxFileDropModule } from 'ngx-file-drop';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
@@ -32,6 +33,7 @@ import { HeroesComponent } from './components/config/heroes/heroes.component';
 import { DesksComponent } from './components/config/desks/desks.component';
 import { DungeonsComponent } from './components/config/dungeons/dungeons.component';
 import { SkillComponent } from './components/config/heroes/components/skill/skill.component';
+import { UploaderService } from './services/uploader.service';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,7 @@ import { SkillComponent } from './components/config/heroes/components/skill/skil
 
     //Module of Select component
     NgSelectModule,
+    NgxFileDropModule,
 
     //Modules of NX-Bootstrap
     TypeaheadModule.forRoot(),
@@ -75,6 +78,7 @@ import { SkillComponent } from './components/config/heroes/components/skill/skil
   ],
   providers: [
     BsLocaleService,
+    UploaderService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
