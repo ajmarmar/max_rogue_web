@@ -1,6 +1,6 @@
 import { StatusHero } from './status_hero';
 
-export type Heroe = {
+export type Hero = {
     _id?: string;
     photo?: boolean;
     name: string | '';

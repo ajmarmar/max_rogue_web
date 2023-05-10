@@ -6,7 +6,7 @@ const setRoutes = (app: Application): void => {
   const router = Router();
   const fileCtrl = new FileCtrl();
 
-  //Upload & Donwlaod
+  // Upload & Download
   router.route('/upload/file').post(fileCtrl.upload);
   router.route('/file/:file').get(fileCtrl.getFile);
   router.route('/download/file/:file').get(fileCtrl.getFileDownload);

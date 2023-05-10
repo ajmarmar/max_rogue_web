@@ -2,7 +2,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { JwtModule } from '@auth0/angular-jwt';
 
-//External Componentents
+//External Components
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxFileDropModule } from 'ngx-file-drop';
 
@@ -19,7 +19,7 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './shared/shared.module';
+
 // Services
 
 // Components
@@ -40,7 +40,7 @@ import { UploaderService } from './services/uploader.service';
     AppComponent,
     NotFoundComponent,
 
-    //Component of gome
+    //Component of game
     HomeComponent,
     StartComponent,
     ConfigComponent,
@@ -68,7 +68,6 @@ import { UploaderService } from './services/uploader.service';
     PopoverModule.forRoot(),
     ModalModule.forRoot(),
 
-    SharedModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: (): string | null => localStorage.getItem('token'),
